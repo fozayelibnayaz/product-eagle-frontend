@@ -1,0 +1,245 @@
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+.login-bg {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: linear-gradient(135deg, #10171e 0%, #3b466e 100%);
+
+}
+
+
+
+.glass-box {
+
+  background: rgba(22, 28, 39, 0.8);
+
+  border-radius: 24px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+
+  backdrop-filter: blur(16px);
+
+  -webkit-backdrop-filter: blur(16px);
+
+  padding: 36px 30px 28px;
+
+  width: 360px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 16px;
+
+  color: #e5e5e5;
+
+}
+
+
+
+.login-title {
+
+  font-size: 2rem;
+
+  font-weight: 600;
+
+  margin: 0 0 4px;
+
+  text-align: center;
+
+}
+
+
+
+.login-subtitle {
+
+  text-align: center;
+
+  margin-bottom: 18px;
+
+}
+
+
+
+.login-input {
+
+  background: rgba(20, 24, 31, 0.65);
+
+  border: none;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  margin-bottom: 4px;
+
+  color: #fff;
+
+  font-size: 1rem;
+
+  outline: none;
+
+}
+
+
+
+.login-input:focus {
+
+  border: 1.5px solid #3ebd9b;
+
+}
+
+
+
+.login-btn {
+
+  margin-top: 8px;
+
+  border: none;
+
+  background: linear-gradient(90deg, #3ebd9b 50%, #45e1fa 100%);
+
+  color: #111;
+
+  font-weight: 600;
+
+  font-size: 1.04rem;
+
+  border-radius: 12px;
+
+  padding: 12px;
+
+  transition: background 0.2s;
+
+  cursor: pointer;
+
+}
+
+
+
+.login-btn:disabled {
+
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+}
+
+
+
+.login-divider {
+
+  text-align: center;
+
+  color: #8c99ab;
+
+  margin: 8px 0 4px;
+
+  font-size: 0.95rem;
+
+}
+
+
+
+.oauth-btn {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 11px;
+
+  border-radius: 12px;
+
+  border: 1px solid #242c38;
+
+  background: rgba(35, 41, 55, 0.68);
+
+  color: #fff;
+
+  font-size: 1rem;
+
+  margin-bottom: 6px;
+
+  cursor: pointer;
+
+  outline: none;
+
+  transition: border 0.18s;
+
+}
+
+
+
+.oauth-btn:hover {
+
+  border: 1.5px solid #3ebd9b;
+
+}
+
+
+
+.oauth-icon.g {
+
+  width: 20px;
+
+  height: 20px;
+
+  background: url('https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg') no-repeat center/contain;
+
+}
+
+
+
+.oauth-icon.x {
+
+  width: 20px;
+
+  height: 20px;
+
+  background: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/X_logo_2023.svg') no-repeat center/contain;
+
+}
+
+
+
+.signup-link {
+
+  text-align: center;
+
+  font-size: 0.96rem;
+
+  color: #91d1fb;
+
+  margin-top: 2px;
+
+}
+
+
+
+.signup-link a {
+
+  color: #49dbb7;
+
+  text-decoration: none;
+
+}

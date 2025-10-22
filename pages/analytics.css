@@ -1,0 +1,113 @@
+/*
+ * Styles for AnalyticsPage (Reusing base styles from products.css)
+ */
+
+/* 1. Base Styles (Must match products.css and login.css) */
+.products-bg {
+    min-height: 100vh;
+    padding: 24px;
+    background: linear-gradient(135deg, #10171e 0%, #3b466e 100%);
+}
+
+.products-glass-box {
+    background: rgba(22, 28, 39, 0.8);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 36px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    color: #e5e5e5;
+}
+
+.primary-btn {
+    border: none;
+    background: linear-gradient(90deg, #3ebd9b 50%, #45e1fa 100%);
+    color: #111;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 12px;
+    padding: 10px 18px;
+    transition: all 0.2s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(62, 189, 155, 0.4);
+}
+
+.primary-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 18px; /* Slightly larger padding for main buttons */
+    border-radius: 12px;
+    border: 1px solid #242c38;
+    background: rgba(35, 41, 55, 0.68);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    transition: border 0.18s, background 0.18s;
+}
+
+.secondary-btn:hover {
+    border-color: #3ebd9b;
+    background: rgba(35, 41, 55, 0.85);
+}
+
+
+/* 2. Specific Analytics Styles */
+
+.analytics-glass-box {
+    /* Adjust padding for a cleaner look on the analytics page */
+    padding: 30px;
+}
+
+.chart-box {
+    /* Inner container for the chart area, slightly offset in background */
+    background: rgba(22, 28, 39, 0.6);
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chart-wrapper {
+    /* Set a max width for the chart to keep it contained and legible */
+    max-width: 400px; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+/* 3. Status/Error Messages */
+.loading-text, .no-data-box {
+    color: #91d1fb;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgba(145, 209, 251, 0.3);
+    border-radius: 12px;
+    background: rgba(35, 41, 55, 0.5);
+    font-size: 1.1rem;
+}
+
+.error-box {
+    color: #ff6666;
+    background: rgba(255, 102, 102, 0.2);
+    border: 1px solid #ff6666;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+/* 4. Raw Data Display */
+.raw-counts-pre {
+    background: rgba(16, 23, 30, 0.9);
+    color: #d1eaff;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

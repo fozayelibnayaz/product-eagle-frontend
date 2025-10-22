@@ -4,6 +4,7 @@ import { useLoginMutation } from "../store/slices/authApi";
 import { useDispatch } from "react-redux";
 import { setUser } from "../store/slices/authSlice";
 import { useRouter } from "next/router";
+import "./login.css"; // Add this line
 
 type FormData = { username: string; password: string };
 
@@ -24,14 +25,36 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
-      <form onSubmit={handleSubmit(onSubmit)} className="bg-white p-8 rounded shadow-md w-full max-w-md">
-        <h1 className="text-xl font-semibold mb-4">Sign in</h1>
-        <label className="block mb-2">Email</label>
-        <input {...register("username")} defaultValue="name@mail.com" className="w-full p-2 border rounded mb-3" />
-        <label className="block mb-2">Password</label>
-        <input {...register("password")} defaultValue="12345" type="password" className="w-full p-2 border rounded mb-3" />
-        <button type="submit" disabled={isLoading} className="w-full p-2 bg-blue-600 text-white rounded">Sign in</button>
+    <div className="login-bg">
+      <form onSubmit={handleSubmit(onSubmit)} className="glass-box">
+        <h1 className="login-title">Welcome back</h1>
+        <p className="login-subtitle">Sign in to your account</p>
+        <input
+          {...register("username")}
+          placeholder="Email"
+          className="login-input"
+        />
+        <input
+          {...register("password")}
+          placeholder="Password"
+          type="password"
+          className="login-input"
+        />
+        <button type="submit" disabled={isLoading} className="login-btn">
+          Sign in
+        </button>
+        <div className="login-divider">or</div>
+        <button type="button" className="oauth-btn google">
+          <span className="oauth-icon g" />
+          Continue with Google
+        </button>
+        <button type="button" className="oauth-btn x">
+          <span className="oauth-icon x" />
+          Continue with X
+        </button>
+        <p className="signup-link">
+          Don't have an account? <a href="#">Sign up</a>
+        </p>
       </form>
     </div>
   );
